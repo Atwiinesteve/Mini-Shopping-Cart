@@ -66,3 +66,22 @@ section#products--container {
         }
     }
 }
+
+// Media Querries
+@media only screen and (max-width: 350px) {
+    section#products--container {
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    section#products--container {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+        padding: 0rem;
+
+        .product {
+            width: 325px;
+            height: 470px;
+            padding: 1rem;
+        }
+    }
+}
