@@ -68,11 +68,6 @@ section#products--container {
 }
 
 // Media Querries
-@media only screen and (max-width: 350px) {
-    section#products--container {
-    }
-}
-
 @media only screen and (max-width: 550px) {
     section#products--container {
         grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
@@ -80,6 +75,19 @@ section#products--container {
 
         .product {
             width: 325px;
+            height: 470px;
+            padding: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section#products--container {
+        grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+        padding: 0rem;
+
+        .product {
+            width: 366px;
             height: 470px;
             padding: 1rem;
         }
